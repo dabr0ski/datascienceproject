@@ -3,6 +3,9 @@ import networkx as nx
 import geopandas as gpd
 import folium
 import pickle
+import os
+
+os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Load data
 print("Loading data...")
