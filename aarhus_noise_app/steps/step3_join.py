@@ -44,11 +44,11 @@ def noise_penalty(db):
 
 edges_noise['penalty'] = edges_noise['isov1'].apply(noise_penalty)
 
-print("✅ Done!")
+print("Done!")
 print(f"Noise levels on streets: {sorted(edges_noise['isov1'].unique())}")
 print("\nNoise categories:")
 print(edges_noise['noise_category'].value_counts())
 
 # Save
 edges_noise.to_file("output/aarhus_streets_noise.geojson", driver="GeoJSON")
-print("✅ Saved as aarhus_streets_noise.geojson")
+print("Saved as aarhus_streets_noise.geojson")
