@@ -1,4 +1,7 @@
 import geopandas as gpd
+import os
+
+os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 print("Loading noise data...")
 noise = gpd.read_file("data/dk_2022_vej_1_5m.tab")
