@@ -28,6 +28,19 @@ Run the steps in order from the project root folder:
 
 After running step 4, the file output/route_map.html will open automatically in your browser showing both routes.If not opening please open the file from the output folder.
 
+## Changing the Start and End Location
+
+To change the route, open steps/step4_routing.py and edit lines 53 and 54:
+
+    start = (56.1572, 10.2107)  # latitude, longitude of start point
+    end   = (56.1711, 10.1952)  # latitude, longitude of end point
+
+Replace the coordinates with any location in Aarhus. Coordinates must be in decimal format (latitude, longitude).
+
+To find coordinates for any address in Aarhus, go to OpenStreetMap, search for the address, right-click on the location and the coordinates will appear in the URL in the format: latitude, longitude.
+
+    https://www.openstreetmap.org
+
 ## Project Structure
 
     aarhus_noise_app/
