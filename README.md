@@ -32,6 +32,11 @@ Run the steps in order from the project root folder:
     python3 steps/step3_join.py
     python3 steps/step4_routing.py
 
+After running all steps once, the output files are saved locally. 
+From that point, you only need to run step 4 to calculate new routes:
+
+    python3 steps/step4_routing.py
+
 After running step 4, the file output/route_map.html will open automatically in your browser showing both routes.If not opening please open the file from the output folder.
 
 ## Changing the Start and End Location
