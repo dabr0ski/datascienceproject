@@ -9,13 +9,13 @@ graph = ox.graph_from_point(
     network_type="walk"
 )
 
-print(f"✅ Done!")
+print(f"Done!")
 print(f"Number of streets: {graph.number_of_edges()}")
 print(f"Number of intersections: {graph.number_of_nodes()}")
 
 # Save it so we don't need to download it again
 ox.save_graphml(graph, "output/aarhus_walk.graphml")
-print("✅ Saved as aarhus_walk.graphml")
+print("Saved as aarhus_walk.graphml")
 
 import matplotlib.pyplot as plt
 
@@ -31,7 +31,7 @@ fig, ax = ox.plot_graph(
 )
 plt.title("Aarhus Walking Network")
 plt.savefig("output/aarhus_streets.png", dpi=150, bbox_inches="tight")
-print("✅ Saved as aarhus_streets.png")
+print("Saved as aarhus_streets.png")
 plt.show()
 print(f"Number of streets: {graph.number_of_edges()}")
 print(f"Number of intersections: {graph.number_of_nodes()}")
