@@ -1,4 +1,7 @@
 import osmnx as ox
+import os
+
+os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 print("Downloading Aarhus walking network...")
 
