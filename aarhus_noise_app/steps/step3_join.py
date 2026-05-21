@@ -1,5 +1,8 @@
 import geopandas as gpd
 import osmnx as ox
+import os
+
+os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 print("Loading saved data...")
 noise = gpd.read_file("output/aarhus_noise.geojson")
