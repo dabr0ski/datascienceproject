@@ -2,6 +2,12 @@
 
 A noise-aware pedestrian routing application for Aarhus, Denmark. The app calculates both the fastest route and the quietest route between two locations, helping users avoid noisy streets based on official Danish noise mapping data.
 
+## Before running the scripts, create two empty folders in the project root:
+
+    mkdir data
+    mkdir output
+
+Then download the noise data from the link below and place the files inside the data/ folder.
 ## Data
 
 The noise data files are too large to include in this repository (approx. 200 MB). Download them from Google Drive and place them in the data/ folder:
